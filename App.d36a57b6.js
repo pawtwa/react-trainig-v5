@@ -32692,7 +32692,7 @@ const Pet = ({
   }
 
   return /*#__PURE__*/_react.default.createElement("a", {
-    href: `/details/${id}`,
+    href: `${""}/details/${id}`,
     className: "pet"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "image-container"
@@ -32822,7 +32822,7 @@ const SearchParams = () => {
     }
   }, /*#__PURE__*/_react.default.createElement("label", {
     htmlFor: "location"
-  }, "location ", new Date().toLocaleString(), /*#__PURE__*/_react.default.createElement("input", {
+  }, "location", /*#__PURE__*/_react.default.createElement("input", {
     id: "location",
     value: location,
     placeholder: "Location",
@@ -33010,12 +33010,18 @@ var _Details = _interopRequireDefault(require("./Details"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const App = () => {
-  return /*#__PURE__*/_react.default.createElement(_react.default.StrictMode, null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement(_router.Link, {
-    to: "/"
-  }, "Adopt me!")), /*#__PURE__*/_react.default.createElement(_router.Router, null, /*#__PURE__*/_react.default.createElement(_SearchParams.default, {
-    path: "./"
+  return /*#__PURE__*/_react.default.createElement(_react.default.StrictMode, null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("div", {
+    style: {
+      display: "none"
+    }
+  }, `PUBLIC_URL: ${""}`), /*#__PURE__*/_react.default.createElement(_router.Link, {
+    to: `${""}/`
+  }, "Adopt me!")), /*#__PURE__*/_react.default.createElement(_router.Router, {
+    basepath: `${""}`
+  }, /*#__PURE__*/_react.default.createElement(_SearchParams.default, {
+    path: "/"
   }), /*#__PURE__*/_react.default.createElement(_Details.default, {
-    path: "./details/:id"
+    path: "/details/:id"
   }))));
 };
 
@@ -33050,7 +33056,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52922" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53605" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

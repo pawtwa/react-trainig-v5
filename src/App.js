@@ -9,9 +9,12 @@ const App = () => {
     <React.StrictMode>
       <div>
         <header>
-          <Link to="/">Adopt me!</Link>
+          <div
+            style={{ display: "none" }}
+          >{`PUBLIC_URL: ${process.env.PUBLIC_URL}`}</div>
+          <Link to={`${process.env.PUBLIC_URL}/`}>Adopt me!</Link>
         </header>
-        <Router>
+        <Router basepath={`${process.env.PUBLIC_URL}`}>
           <SearchParams path="/" />
           <Details path="/details/:id" />
         </Router>

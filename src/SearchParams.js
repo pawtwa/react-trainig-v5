@@ -38,7 +38,7 @@ const SearchParams = () => {
         }}
       >
         <label htmlFor="location">
-          location {new Date().toLocaleString()}
+          location
           <input
             id="location"
             value={location}

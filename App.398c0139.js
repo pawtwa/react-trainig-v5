@@ -112,4 +112,4 @@ module.exports=require("./impl"),module.exports.ANIMALS=require("./animals");
 },{"react":"n8MK","@frontendmasters/pet":"OpLS","./Carousel":"a8IE"}],"lY9v":[function(require,module,exports) {
 "use strict";var e=u(require("react")),t=require("react-dom"),r=require("@reach/router"),a=u(require("./SearchParams")),l=u(require("./Details"));function u(e){return e&&e.__esModule?e:{default:e}}const d=()=>e.default.createElement(e.default.StrictMode,null,e.default.createElement("div",null,e.default.createElement("header",null,e.default.createElement(r.Link,{to:"/"},"Adopt me!")),e.default.createElement(r.Router,null,e.default.createElement(a.default,{path:"/"}),e.default.createElement(l.default,{path:"/details/:id"}))));(0,t.render)(e.default.createElement(d,{key:"app"}),document.getElementById("root"));
 },{"react":"n8MK","react-dom":"NKHc","@reach/router":"VJZj","./SearchParams":"oLoL","./Details":"XGSj"}]},{},["lY9v"], null)
-//# sourceMappingURL=App.398c0139.js.map
+//# sourceMappingURL=/App.398c0139.js.map

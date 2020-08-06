@@ -5,7 +5,7 @@ class Carousel extends React.Component {
 
   static getDerivedStateFromProps({ photos: media }) {
     let photos = ["https://via.placeholder.com/300.png/09f/fff"];
-    if (media.length) {
+    if (media && media.length) {
       photos = media.map(({ large }) => large);
     }
     return { photos };
